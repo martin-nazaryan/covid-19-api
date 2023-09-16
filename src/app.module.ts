@@ -1,9 +1,12 @@
 import { Module } from '@nestjs/common';
+import { HttpModule } from '@nestjs/axios';
+import { ConfigModule } from '@nestjs/config';
+
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { HttpModule } from '@nestjs/axios';
+import { CountriesModule } from './countries/countries.module';
+
 import * as process from 'process';
-import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
@@ -13,6 +16,7 @@ import { ConfigModule } from '@nestjs/config';
     HttpModule.register({
       baseURL: process.env.API_URL,
     }),
+    CountriesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
