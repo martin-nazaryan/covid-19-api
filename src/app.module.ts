@@ -2,9 +2,12 @@ import { Module } from '@nestjs/common';
 import { HttpModule } from '@nestjs/axios';
 import { ConfigModule } from '@nestjs/config';
 
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { CountriesModule } from './countries/countries.module';
+import { CountriesModule } from './resources/countries/countries.module';
+import { InfoModule } from './resources/info/info.module';
+import { CountriesController } from './resources/countries/countries.controller';
+import { CountriesService } from './resources/countries/countries.service';
+import { InfoController } from './resources/info/info.controller';
+import { InfoService } from './resources/info/info.service';
 
 import * as process from 'process';
 
@@ -17,8 +20,9 @@ import * as process from 'process';
       baseURL: process.env.API_URL,
     }),
     CountriesModule,
+    InfoModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [CountriesController, InfoController],
+  providers: [CountriesService, InfoService],
 })
 export class AppModule {}
