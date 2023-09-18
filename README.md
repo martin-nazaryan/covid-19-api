@@ -39,27 +39,24 @@ To start the API, run the following commands:
     # Start the development server
     yarn run start:dev
 
-
-The API will be available at `http://localhost:3000` by default. You can access the API endpoints from there.
-
 API Endpoints
 -------------
 
 ### Get All Countries Info
 
-*   **Endpoint:** /countries
+*   **Endpoint:** `/countries`
 *   **Method:** GET
 *   **Description:** Get information about all countries affected by COVID-19.
 
 ### Get Specific Country Info
 
-*   **Endpoint:** /countries/:country
+*   **Endpoint:** `/countries/:country`
 *   **Method:** GET
 *   **Description:** Get information about a specific country affected by COVID-19.
 
 ### Get Cases, Today's Cases, Deaths, and Today's Deaths
 
-*   **Endpoint:** /info
+*   **Endpoint:** `/info`
 *   **Method:** GET
 *   **Description:** Get global COVID-19 cases, today's cases, deaths, and today's deaths.
 
