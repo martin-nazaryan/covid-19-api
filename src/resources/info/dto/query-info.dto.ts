@@ -1,5 +1,7 @@
+import { QuerySelectOptions } from '../../../app.types';
+
 export class QueryInfoDto {
-  yesterday?: string;
-  twoDaysAgo?: string;
-  allowNull?: Date;
+  yesterday?: QuerySelectOptions;
+  twoDaysAgo?: QuerySelectOptions;
+  allowNull?: QuerySelectOptions;
 }
