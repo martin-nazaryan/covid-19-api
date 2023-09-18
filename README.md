@@ -60,6 +60,12 @@ API Endpoints
 *   **Method:** GET
 *   **Description:** Get global COVID-19 cases, today's cases, deaths, and today's deaths.
 
+### The health check
+
+*   **Endpoint:** `/health`
+*   **Method:** GET
+*   **Description:** The health check endpoint that indicate the API is alive and running
+
 ## Swagger Documentation
 
 The COVID-19 API provides also Swagger documentation for its endpoints described above, which allows you to explore and test the API easily. 
