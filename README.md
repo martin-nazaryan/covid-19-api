@@ -62,3 +62,8 @@ API Endpoints
 *   **Endpoint:** /info
 *   **Method:** GET
 *   **Description:** Get global COVID-19 cases, today's cases, deaths, and today's deaths.
+
+## Swagger Documentation
+
+The COVID-19 API provides also Swagger documentation for its endpoints described above, which allows you to explore and test the API easily. 
+You can access the Swagger documentation at the `/api` path after running the application.
